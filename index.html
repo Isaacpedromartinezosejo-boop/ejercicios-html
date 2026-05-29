@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo Práctica de Páginas Web</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .codigo {
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            white-space: pre-wrap; /* respeta saltos de línea */
+            color: white;
+        }
+        #ej1 { background-color: #3c4de7; }   /* azul */
+        #ej2 { background-color: #000000; }   /* negro */
+        #ej3 { background-color: #27ae60; }   /* verde */
+        #ej4 { background-color: #8e44ad; }   /* morado */
+        #ej5 { background-color: #a6c90b; }   /* amarillo */
+        #ej6 { background-color: #48494b; }   /* gris claro */
+    </style>
+</head>
+<body>
+    <h1>Trabajo Práctica de Páginas Web</h1>
+    <h2>Entregado por: Pedro Isaac Martinez Osejo
+    </h2>
+
+    <div id="ej1" class="codigo">
+Ejercicio 1
+&lt;script&gt;
+    function alternarLuz() {
+        let caja = document.getElementById("caja");
+        if (caja.style.background == "gray") {
+            caja.style.background = "yellow";
+        } else {
+            caja.style.background = "gray";
+        }
+    }
+&lt;/script&gt;
+    </div>
+
+    <div id="ej2" class="codigo">
+Ejercicio 2
+&lt;script&gt;
+    let numero = 0;
+    function incrementar() {
+        numero++;
+        document.getElementById("contador").innerHTML = numero;
+    }
+&lt;/script&gt;
+    </div>
+
+    <div id="ej3" class="codigo">
+Ejercicio 3
+&lt;script&gt;
+    function mostrarMensaje() {
+        alert("Hola, este es un mensaje de prueba");
+    }
+&lt;/script&gt;
+    </div>
+
+    <div id="ej4" class="codigo">
+Ejercicio 4
+&lt;script&gt;
+    function cambiarTexto() {
+        document.getElementById("texto").innerHTML = "Texto cambiado!";
+    }
+&lt;/script&gt;
+    </div>
+
+    <div id="ej5" class="codigo">
+Ejercicio 5
+&lt;script&gt;
+    function sumar() {
+        let a = 5, b = 3;
+        let resultado = a + b;
+        console.log("La suma es: " + resultado);
+    }
+&lt;/script&gt;
+    </div>
+
+    <div id="ej6" class="codigo">
+Ejercicio 6
+&lt;script&gt;
+    function cambiarColor() {
+        document.body.style.backgroundColor = "lightblue";
+    }
+&lt;/script&gt;
+    </div>
+</body>
+</html>
